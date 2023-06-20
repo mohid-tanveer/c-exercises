@@ -21,6 +21,8 @@ void print7Seg(char *input, int *ints) {
   }
 }
 
+// This program takes a number from the user and prints the value in 7seg representation.
+// The input is locked to a limit of 10 numbers.
 int main() {
   char userInput[10];
   int userInts[10];

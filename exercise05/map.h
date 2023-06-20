@@ -3,24 +3,6 @@
 
 #include <stdint.h>
 
-// Implementation of a hash map with chaining.
-// Usage:
-//
-//  map_t *map = map_create(init_size);
-//
-//  is_new = map_put(string_key, value_ptr);
-//
-//  was_in = map_remove(map, string_key);
-//
-//  val_ptr = NULL;
-//  is_in = map_get(map, &val_ptr);
-//  // *val_ptr is value if is_in is nonzero.
-//
-//  map_metrics_t metrics = map_metrics(map);
-//  map_resize(map, new_size);
-//
-//  map_free(&map);
-
 // Forward declaration of Map type.
 typedef struct map_t map_t;
 

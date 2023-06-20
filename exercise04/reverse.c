@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// this program allows for both manual input and file input by reading integers from standard
+// input (one per line) and adding them to a data structure. when an end of file character is
+// met the program prints the digits in reverse order. try running "$ cat nums.txt | ./reverse"
+// for sample output compared to the nums.txt file.
 int main() {
   int *nums = malloc(sizeof(int)); // allocate initial memory for one integer
   int i = 0;

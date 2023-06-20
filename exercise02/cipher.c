@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
+// cipherText is given a phrase as well as the substitution pad and ciphers the phrase
+// using mathematical manipulation of the characters with regards to ASCII values.
 void cipherText(char *phrase, char *subPad) {
   int difference[26];
   char alpha[] = "abcdefghijklmnopqrstuvwxyz";
@@ -22,6 +24,9 @@ void cipherText(char *phrase, char *subPad) {
   printf("%s", phrase);
 }
 
+// this program allows the user to input a substitution pad in order to encrypt a phrase. 
+// for example, if the subpad is qwertyuiopasdfghjklzxcvbnm, then the letter a will be 
+// replaced by q, b with w, c with e, etc.
 int main() {
   char phrase[1024];
   char subPad[26];

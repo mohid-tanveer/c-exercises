@@ -12,6 +12,8 @@ void reverseWord(char *word) {
   printf("\n");
 }
 
+// Takes a singular word and prints it regularly as well as the reversed word through the 
+// reverseWord function. The main function focuses on formatting of text printed.
 int main() {
   char word[50];
   while (1) {

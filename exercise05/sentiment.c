@@ -8,6 +8,9 @@
 #define MAP_SIZE (1 << 14)
 #define BUFFER_SIZE 2048
 
+// This program takes the standard input of a sentiment map and allows for the user to
+// input sentences calculating the sentiment of the sentence.
+
 // Represents the sentiment value for a single word/term.
 typedef struct sentiment_t {
   double pos; // mean positive sentiment for the term
@@ -69,14 +72,6 @@ void build_sentiment_map(FILE *f) {
   int line_no = -1;
   while (fgets(buff, BUFFER_SIZE, f) != NULL) {
     line_no++;
-    // clang-format off
-    //
-    // Line is ether:
-    // POS<TAB>ID<TAB>PosScore<TAB>NegScore<TAB>Word#n Word#n Word#n ...<TAB>Definition
-    // OR
-    // # this line is a comment since it starts with #
-    //
-    // clang-format on
 
     // end of the file
     if (feof(f)) {
